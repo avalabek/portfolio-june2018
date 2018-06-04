@@ -1,0 +1,50 @@
+
+h1{
+  font-family: 'Raleway Dots', cursive;
+  font-size: 50px;
+  
+}
+ #hello { 
+   margin-left: 50px;
+   margin-top:150px;
+   font-family: 'Raleway Dots', cursive;
+  font-size: 100px;
+  
+   position:absolute; 
+   top: 0; 
+   left:0; 
+   color:  #af3a8a;
+   z-index: 9999; 
+  }
+
+@for $i from 1 through 30 {
+  @keyframes particle-animation-#{$i}{
+  100% {
+    transform: translate3d((random(90) * 1vw), (random(90)*1vw), (random(100)*1px));
+
+  }
+}
+.particle:nth-child(#{$i}){
+
+  animation: particle-animation-#{$i} 5s infinite;
+  $size: random(10) + 5 + px;
+ 
+  height: $size;
+  width: $size;
+  opacity: random(100)/100;
+  animation-delay: -$i * .2s;
+  
+  background: hsl(random(360), 70%, 50%);
+  transform: translate3d((random(90) * 1vw), (random(90)*1vw), (random(100)*1px));
+
+
+}
+}
+
+.particle {
+  position: absolute;
+
+  border-radius: 50%;
+  
+
+}
