@@ -1,17 +1,100 @@
 
 
- h1 { 
-   position:absolute; 
-   
-   transform: tranlate(-50%, -50%);
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   font-family: 'Raleway Dots', cursive;
-   font-size: 100px;
+ h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: indigo;
+  font-family: 'Raleway Dots', cursive;
+   font-size: 50px;
    color:  #611adb;
    z-index: 9999; 
+   border-bottom: 8px solid #fff;
+   box-shadow: 0 10px 10px rgba(0,0,0,.2);
+
+}
+h1 span {
+  position: relative;
+  display: inline-block;
+  animation: animate 1.5s linear;
+}
+h1 span:nth-child(1){
+  animation-delay: 0s;
+}
+h1 span:nth-child(2){
+  animation-delay: 0.2s;
+}
+h1 span:nth-child(3){
+  animation-delay: 0.4s;
+}
+h1 span:nth-child(4){
+  animation-delay: 0.6s;
+}
+h1 span:nth-child(5){
+  animation-delay: 0.8s;
+}
+h1 span:nth-child(6){
+  animation-delay: 1s;
+}
+h1 span:nth-child(7){
+  animation-delay: 1.1s;
+}
+h1 span:nth-child(8){
+  animation-delay: 1.3s;
+}
+h1 span:nth-child(9){
+  animation-delay: 1.5s;
+}
+h1 span:nth-child(10){
+  animation-delay: 1.7s;
+}
+h1 span:nth-child(11){
+  animation-delay: 1.9s;
+}
+h1 span:nth-child(12){
+  animation-delay: 2.1s;
+}
+h1 span:nth-child(13){
+  animation-delay: 2.3s;
+}
+h1 span:nth-child(14){
+  animation-delay: 2.5s;
+}
+h1 span:nth-child(15){
+  animation-delay: 2.7s;
+}
+@keyframes animate{
+  0%{
+    transform: translateY(0px);
   }
+   10%{
+    transform: translateY(-30px);
+  } 
+  15%{
+    transform: translateY(0px);
+  } 25%{
+    transform: translateY(-20px);
+  } 30%{
+    transform: translateY(0px);
+  } 40%{
+    transform: translateY(0px);
+  }
+  40%{
+    transform: translateY(-10px);
+  }
+  45%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
   
 @for $i from 1 through 60{
   @keyframes particle-animation-#{$i}{
