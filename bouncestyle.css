@@ -1,12 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two");
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+h1 {
+  font-family: "Lobster Two", cursive;
+  font-size: 5rem;
+  text-shadow: 0px 1px 0px white;
+  color: #343434;
+}
+
+.container {
+  position: relative;
+  z-index: 0;
+  background-color: #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.pulse {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30rem;
+}
+.pulse circle {
+  fill: #ff5154;
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: 50% 50%;
+  animation: pulse 2s cubic-bezier(0.5, 0.5, 0, 1);
+}
+.pulse circle:nth-child(2) {
+  fill: #7fc6a4;
+  animation: pulse 2s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+}
+.pulse circle:nth-child(3) {
+  fill: #e5f77d;
+  animation: pulse 2s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+}
+
+@keyframes pulse {
+  25% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 body {
   margin: 0;
   padding: 0;
   background: mistyrose;
+}
 
+#empty {
+  color: mistyrose;
 }
-#empty{
-  color:mistyrose;
-}
+
 h1 {
   position: absolute;
   top: 50%;
@@ -17,69 +70,125 @@ h1 {
   margin: 0;
   padding: 0;
   color: indigo;
-  font-family: 'Raleway Dots', cursive;
-   font-size: 50px;
-   color:  #611adb;
-   z-index: 9999; 
-   border-bottom: 8px solid #fff;
-   box-shadow: 0 10px 10px rgba(0,0,0,.2);
-
+  font-family: "Raleway Dots", cursive;
+  font-size: 50px;
+  color: #611adb;
+  z-index: 9999;
+  border-bottom: 8px solid #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
+
 h1 span {
   position: relative;
   display: inline-block;
   animation: animate 1.5s linear;
 }
-h1 span:nth-child(1){
+
+h1 span:nth-child(1) {
   animation-delay: 0s;
 }
-h1 span:nth-child(2){
+
+h1 span:nth-child(2) {
   animation-delay: 0.2s;
 }
-h1 span:nth-child(3){
+
+h1 span:nth-child(3) {
   animation-delay: 0.4s;
 }
-h1 span:nth-child(4){
+
+h1 span:nth-child(4) {
   animation-delay: 0.6s;
 }
-h1 span:nth-child(5){
+
+h1 span:nth-child(5) {
   animation-delay: 0.8s;
 }
-h1 span:nth-child(6){
+
+h1 span:nth-child(6) {
   animation-delay: 1s;
 }
-h1 span:nth-child(7){
+
+h1 span:nth-child(7) {
   animation-delay: 1.1s;
 }
 
-
-@keyframes animate{
-  0%{
+@keyframes animate {
+  0% {
     transform: translateY(0px);
   }
-   10%{
+  10% {
     transform: translateY(-30px);
-  } 
-  15%{
-    transform: translateY(0px);
-  } 25%{
-    transform: translateY(-20px);
-  } 30%{
-    transform: translateY(0px);
-  } 40%{
+  }
+  15% {
     transform: translateY(0px);
   }
-  40%{
+  25% {
+    transform: translateY(-20px);
+  }
+  30% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  40% {
     transform: translateY(-10px);
   }
-  45%{
+  45% {
     transform: translateY(0px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
+/* Google Fonts */
+/* Global */
+html {
+  min-height: 100%;
+  overflow: hidden;
+}
 
+body {
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: black;
+  font-family: "Anonymous Pro", monospace;
+  background-color: #191919;
+}
 
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
 
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
 
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/*# sourceMappingURL=bouncestyle.css.map */
