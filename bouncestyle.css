@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster+Two");
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 h1 {
   font-family: "Lobster Two", cursive;
   font-size: 5rem;
@@ -61,6 +60,9 @@ body {
 }
 
 h1 {
+  color: #D5E2D6;
+  font-family: "Lobster";
+  text-shadow: #4A744D 1px 1px, #4A744D 0px 0px, #4A744D 1px 1px, #4A744D 2px 2px, #4A744D 3px 3px, #4A744D 4px 4px, #4A744D 5px 5px, #4A744D 6px 6px, #4A744D 7px 7px, #4A744D 8px 8px, #4A744D 9px 9px, #4A744D 10px 10px, #4A744D 11px 11px, #4A744D 12px 12px, #4A744D 13px 13px, #4A744D 14px 14px, #4A744D 15px 15px, #4A744D 16px 16px, #4A744D 17px 17px, #4A744D 18px 18px, #4A744D 19px 19px, #4A744D 20px 20px, #4A744D 21px 21px, #4A744D 22px 22px, #4A744D 23px 23px, #4A744D 24px 24px, #4A744D 25px 25px, #4A744D 26px 26px, #4A744D 27px 27px, #4A744D 28px 28px, #4A744D 29px 29px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -69,13 +71,7 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 0;
-  color: indigo;
-  font-family: "Raleway Dots", cursive;
-  font-size: 50px;
-  color: #611adb;
   z-index: 9999;
-  border-bottom: 8px solid #fff;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 span {
@@ -139,55 +135,6 @@ h1 span:nth-child(7) {
   }
   100% {
     transform: translateY(0px);
-  }
-}
-/* Google Fonts */
-/* Global */
-html {
-  min-height: 100%;
-  overflow: hidden;
-}
-
-body {
-  height: calc(100vh - 8em);
-  padding: 4em;
-  color: black;
-  font-family: "Anonymous Pro", monospace;
-  background-color: #191919;
-}
-
-.line-1 {
-  position: relative;
-  top: 50%;
-  width: 24em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
-}
-
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 24em;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: black;
-  }
-  to {
-    border-right-color: transparent;
   }
 }
 
