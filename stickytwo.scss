@@ -6,6 +6,10 @@ body {
   margin: $top-offset auto;
 
 }
+.portfolio-item {
+  width: 350px;
+  height: 250px;
+}
 #name {
   color: #D5E2D6;
 font-family: 'Lobster';
@@ -28,7 +32,13 @@ h1 {
 }
 .title{
  font-family: 'Raleway Dots', cursive;
-  font-size: 25px;
+  font-size: 30px;
+  text-align: center;
+}
+.marker{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  text-align: center;
 }
 section {
   margin: 0;
